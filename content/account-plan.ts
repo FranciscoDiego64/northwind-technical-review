@@ -99,16 +99,18 @@ export const accountPlan = {
       {
         number: 3,
         title: "Product Discovery & Search",
-  
+      
         currentStateTitle: "Current signal",
-  
+      
         currentState:
           "Search abandonment is currently Northwind's largest identified contributor to lost carts. Search related Fast Data Transfer also increased 63% month over month, providing a technical signal to investigate alongside the business funnel.",
-  
+      
+        actionsTitle: "Actions",
+      
         actionsIntro: "Establish the end-to-end journey:",
-  
+      
         actionsLead: "Search → Results → Product → Cart",
-  
+      
         baseline: [
           "search abandonment",
           "zero-result searches",
@@ -116,16 +118,16 @@ export const accountPlan = {
           "result interaction",
           "search-to-cart conversion",
         ],
-  
+      
         actionsClosing:
           "Use these findings to determine whether the primary issue is relevance, technical performance, rendering, or another part of the customer journey before selecting remediation.",
-  
+      
         dependencies:
           "Product/search ownership, analytics data and engineering support.",
-  
+      
         impactIfUnmet:
           "Continued search abandonment represents a direct risk to product discovery and conversion.",
-  
+      
         successMeasures: [
           "Search funnel baseline established.",
           "Main contributors to abandonment identified.",
@@ -142,20 +144,22 @@ export const accountPlan = {
   
         currentState:
           "The available usage data does not establish readiness for the Q1 security review. Readiness therefore needs to be assessed directly against the review requirements, architecture and existing controls.",
-  
+        
+        actionsTitle: "Actions",
+
         actionsIntro: "Create a security readiness tracker:",
   
         actionsLead:
           "Requirement → Current state → Gap → Owner → Remediation → Evidence → Deadline",
   
         actionsClosing:
-          "Prioritize requirements that could block the wholesale-channel launch and involve the appropriate technical specialists where deeper assessment is required.",
+          "Prioritize requirements that could block the wholesale channel launch and involve the appropriate technical specialists where deeper assessment is required.",
   
         dependencies:
           "Northwind security and engineering teams, confirmed review criteria and review date.",
   
         impactIfUnmet:
-          "Failure to close a material security requirement could delay the wholesale-channel launch and its associated business opportunity.",
+          "Failure to close a material security requirement could delay the wholesale channel launch and its associated business opportunity.",
   
         successMeasures: [
           "All material requirements have an owner and deadline.",
@@ -172,11 +176,13 @@ export const accountPlan = {
   
         currentState:
           "No mobile work has started. The immediate priority is therefore architectural readiness rather than implementation.",
-  
+
+       
+
         actionsIntro:
           "Assess the existing catalog architecture with particular attention to:",
   
-        actions: [
+        baseline: [
           "API contracts and ownership",
           "authentication",
           "caching and data-fetching patterns",

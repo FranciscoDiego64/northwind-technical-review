@@ -28,7 +28,7 @@ export const decisionMatrix = {
       {
         order: 3,
         request: "Failed deploy support ticket sent directly to TAM",
-        priority: "Immediate routing",
+        priority: "Immediate",
         tamAction:
           "Acknowledge the request, determine whether it is blocking a critical workload, then move it into the appropriate support process. Stay engaged if the account impact warrants it.",
         routing: "CSE",

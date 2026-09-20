@@ -161,10 +161,11 @@ export default function AccountPlanPage() {
                   {/* Standard actions */}
                   {"actions" in workstream && workstream.actions && (
                     <div className="mt-8">
-                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-black/35">
-                        Actions
-                      </p>
-
+                     <p className="text-xs font-semibold uppercase tracking-[0.14em] text-black/35">
+                        {"actionsTitle" in workstream
+                            ? workstream.actionsTitle
+                                : "Actions"}
+                    </p>
                       <ul className="mt-4 space-y-3">
                         {workstream.actions.map((action) => (
                           <li
@@ -184,42 +185,46 @@ export default function AccountPlanPage() {
 
                   {/* Search baseline */}
                   {"actionsIntro" in workstream &&
-                    workstream.actionsIntro && (
-                      <div className="mt-8">
-                        <p className="text-sm leading-6 text-black/65">
-                          {workstream.actionsIntro}
-                        </p>
+  workstream.actionsIntro && (
+    <div className="mt-8">
+      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-black/35">
+        Actions
+      </p>
 
-                        {workstream.actionsLead && (
-                          <p className="mt-3 text-lg font-semibold tracking-tight">
-                            {workstream.actionsLead}
-                          </p>
-                        )}
+      <p className="mt-3 text-sm leading-6 text-black/65">
+        {workstream.actionsIntro}
+      </p>
 
-                        {workstream.baseline && (
-                          <ul className="mt-5 space-y-3">
-                            {workstream.baseline.map((item) => (
-                              <li
-                                key={item}
-                                className="flex gap-3 text-sm leading-6 text-black/65"
-                              >
-                                <span
-                                  aria-hidden="true"
-                                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-black"
-                                />
-                                <span>{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
+      {workstream.actionsLead && (
+        <p className="mt-3 text-lg font-semibold tracking-tight">
+          {workstream.actionsLead}
+        </p>
+      )}
 
-                        {workstream.actionsClosing && (
-                          <p className="mt-5 text-sm leading-6 text-black/65">
-                            {workstream.actionsClosing}
-                          </p>
-                        )}
-                      </div>
-                    )}
+      {workstream.baseline && (
+        <ul className="mt-5 space-y-3">
+          {workstream.baseline.map((item) => (
+            <li
+              key={item}
+              className="flex gap-3 text-sm leading-6 text-black/65"
+            >
+              <span
+                aria-hidden="true"
+                className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-black"
+              />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {workstream.actionsClosing && (
+        <p className="mt-5 text-sm leading-6 text-black/65">
+          {workstream.actionsClosing}
+        </p>
+      )}
+    </div>
+  )}
 
                   {/* Dependencies / impact */}
                   <div className="mt-8 grid gap-6 md:grid-cols-2">
