@@ -9,9 +9,6 @@ export default function Header() {
             <div className="mt-0.5 text-xs text-black/50">
               Technical Health Review
             </div>
-            <div className="mt-0.5 text-xs text-black/50">
-                Diego Durán-Báez
-            </div>
           </div>
   
           <div className="hidden text-right text-xs text-black/50 sm:block">
