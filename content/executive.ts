@@ -4,7 +4,7 @@ export const executiveReadout = {
   
     executivePosition: {
       title: "Executive position",
-      text: `Northwind has four near term commitments: keep infrastructure spend flat through holiday traffic growth, pass the Q1 security review, improve product discovery, and launch the mobile client.
+      text: `Northwind has four near term commitments: keep infrastructure spend flat through holiday traffic growth, pass the Q1 security review, improve product discovery and launch the mobile client.
   
   The immediate focus is to protect these commitments by addressing the highest-impact technical risks first, rather than optimizing the platform broadly.`,
     },
@@ -64,12 +64,12 @@ export const executiveReadout = {
         {
           number: 3,
           title: "Secure the wholesale-channel path",
-          text: "Map the Q1 review requirements to current controls, identify gaps, and assign remediation owners and deadlines.",
+          text: "Map the Q1 review requirements to current controls, identify gaps and assign remediation owners and deadlines.",
         },
         {
           number: 4,
           title: "De-risk mobile",
-          text: "Assess catalog APIs, authentication, caching and web dependencies, and agree the architecture required for mobile reuse.",
+          text: "Assess catalog APIs, authentication, caching and web dependencies and agree the architecture required for mobile reuse.",
         },
       ],
     },
@@ -98,6 +98,6 @@ export const executiveReadout = {
   
     executiveFocus: {
       title: "Executive focus",
-      text: "Protect the four business commitments, validate the highest-impact technical risks, and turn findings into owned actions.",
+      text: "Protect the four business commitments, validate the highest-impact technical risks and turn findings into owned actions.",
     },
   };

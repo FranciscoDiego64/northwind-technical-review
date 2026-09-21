@@ -15,7 +15,7 @@ export default function Home() {
           {executiveReadout.executivePosition.title}
         </p>
 
-        <p className="mt-5 text-xl leading-9 tracking-[-0.01em] sm:text-2xl sm:leading-10">
+        <p className="mt-5 text-xl leading-6 tracking-[-0.01em] sm:text-xl sm:leading-7">
           {executiveReadout.executivePosition.text}
         </p>
       </section>
@@ -34,7 +34,7 @@ export default function Home() {
             {executiveReadout.executiveFocus.title}
           </p>
 
-          <p className="mt-4 text-xl leading-8 tracking-tight sm:text-2xl sm:leading-9">
+          <p className="mt-4 text-lg leading-8 tracking-tight sm:text-xl sm:leading-9">
             {executiveReadout.executiveFocus.text}
           </p>
         </div>

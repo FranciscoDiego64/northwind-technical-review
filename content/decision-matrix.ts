@@ -30,7 +30,7 @@ export const decisionMatrix = {
         request: "Failed deploy support ticket sent directly to TAM",
         priority: "Immediate",
         tamAction:
-          "Acknowledge the request, determine whether it is blocking a critical workload, then move it into the appropriate support process. Stay engaged if the account impact warrants it.",
+          "Acknowledge the request, determine if it's blocking a critical workload, then move it into the appropriate support process. Stay engaged if the account impact warrants it.",
         routing: "CSE",
         why: "The issue needs prompt ownership, but support tickets and SLAs belong with CSE rather than the TAM.",
       },

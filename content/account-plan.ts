@@ -15,7 +15,7 @@ export const accountPlan = {
       ],
   
       closing:
-        "The first 30 days will focus on validating the highest-impact technical risks, establishing ownership, and turning confirmed findings into measurable actions.",
+        "The first 30 days will focus on validating the highest impact technical risks, establishing ownership and turning confirmed findings into measurable actions.",
     },
   
     priorities: {
@@ -48,7 +48,7 @@ export const accountPlan = {
           work: "Map Q1 review requirements to the current architecture, controls and evidence.",
           dependencies:
             "Security, engineering, review criteria and deadline",
-          impactIfUnmet: "Risk of delaying the wholesale-channel launch",
+          impactIfUnmet: "Risk of delaying the wholesale channel launch",
           expectedReturn: "Clear remediation plan and review readiness",
         },
         {
@@ -120,7 +120,7 @@ export const accountPlan = {
         ],
       
         actionsClosing:
-          "Use these findings to determine whether the primary issue is relevance, technical performance, rendering, or another part of the customer journey before selecting remediation.",
+          "Use these findings to determine if the primary issue is relevance, technical performance, rendering or another part of the customer journey before selecting a corrective action.",
       
         dependencies:
           "Product/search ownership, analytics data and engineering support.",
@@ -219,7 +219,7 @@ export const accountPlan = {
             "Confirm business targets, deadlines and owners.",
             "Establish the holiday traffic forecast and spend target.",
             "Baseline the search funnel.",
-            "Confirm security-review requirements and date.",
+            "Confirm security review requirements and date.",
             "Map mobile stakeholders and existing catalog dependencies.",
           ],
         },
@@ -229,7 +229,7 @@ export const accountPlan = {
   
           items: [
             "Investigate the major cost and resource signals.",
-            "Trace the highest-growth routes and /api/recommendations.",
+            "Trace the highest growth routes and /api/recommendations.",
             "Analyse the search funnel.",
             "Validate security gaps against the review requirements.",
             "Complete the initial mobile architecture assessment.",
@@ -289,7 +289,7 @@ export const accountPlan = {
   
       items: [
         "A validated cost-control plan for the holiday period.",
-        "Clear ownership of the highest-impact technical risks.",
+        "Clear ownership of the highest impact technical risks.",
         "A measurable search baseline and agreed improvement actions.",
         "A security readiness plan tied to the Q1 review requirements.",
         "An agreed architectural path for mobile with dependencies and owners.",

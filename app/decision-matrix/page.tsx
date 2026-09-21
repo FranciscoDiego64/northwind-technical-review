@@ -95,7 +95,7 @@ export default function DecisionMatrixPage() {
             {decisionMatrix.operatingPrinciple.title}
           </p>
 
-          <p className="mt-5 text-xl leading-9 tracking-tight sm:text-2xl">
+          <p className="mt-5 text-lg leading-8 tracking-tight sm:text-xl">
             {decisionMatrix.operatingPrinciple.text}
           </p>
         </div>
