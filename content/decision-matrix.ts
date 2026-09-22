@@ -2,7 +2,7 @@ export const decisionMatrix = {
     title: "Inbound Decision Matrix",
   
     introduction:
-      "Prioritization is based on customer impact, urgency and alignment with Northwind's business commitments. Routing reflects the team best positioned to execute, while the TAM retains ownership of the customer experience and overall coordination.",
+      "Prioritization is based on customer impact, urgency and alignment with Northwind's business commitments. The right team handles each request, while the TAM stays accountable for the overall customer experience and coordination.",
   
     items: [
       {

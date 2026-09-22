@@ -63,7 +63,7 @@ export const accountPlan = {
       ],
   
       sequencing:
-        "Cost and search begin immediately. Security readiness runs in parallel because of its external deadline. Mobile starts with architecture discovery while the other workstreams progress.",
+        "Cost and search work start immediately, with security running in parallel because of the Q1 deadline. Mobile starts with an architecture review while the other work progresses.",
     },
   
     workstreams: [
@@ -80,13 +80,13 @@ export const accountPlan = {
         actions: [
           "Establish the relationship between traffic growth, function execution, data transfer and cost.",
           "Prioritize /, product pages and /api/recommendations.",
-          "Validate whether caching, data-fetching patterns, payload size or recommendation processing are contributing to avoidable consumption.",
+          "Validate if caching, data-fetching patterns, payload size or recommendation processing are contributing to avoidable consumption.",
           "Review middleware scope and revalidation activity as secondary efficiency checks.",
           "Agree the expected holiday traffic profile and infrastructure spend budget.",
         ],
   
         dependencies:
-          "Engineering owners, expected traffic and workload growth and an agreed holiday spend target.",
+          "Engineering owners, expected holiday traffic and an agreed spend target.",
   
         successMeasures: [
           "Major consumption drivers are understood and documented.",
@@ -120,7 +120,7 @@ export const accountPlan = {
         ],
       
         actionsClosing:
-          "Use these findings to determine if the primary issue is relevance, technical performance, rendering or another part of the customer journey before establishing a corrective action.",
+          "Use these findings to identify if the main issue is relevance, performance, rendering or another part of the customer journey before deciding on the right action.",
       
         dependencies:
           "Product/search ownership, analytics data and engineering support.",
@@ -156,7 +156,7 @@ export const accountPlan = {
           "Prioritize requirements that could block the wholesale channel launch and involve the appropriate technical specialists where deeper assessment is required.",
   
         dependencies:
-          "Northwind security and engineering teams, confirmed review criteria and review date.",
+          "Northwind security & engineering teams, along with the confirmed review criteria and date.",
   
         impactIfUnmet:
           "Failure to close a key security requirement could delay the wholesale channel launch and its related business opportunity.",

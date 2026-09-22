@@ -54,7 +54,7 @@ export const executiveReadout = {
         {
           number: 1,
           title: "Protect spend through peak traffic",
-          text: "Validate the main cost and resource drivers, starting with high-growth routes and /api/recommendations. Establish the holiday expected traffic and spend budget.",
+          text: "Validate the main cost and resource drivers, starting with the fastest growing routes and /api/recommendations. Establish the holiday expected traffic and spend budget.",
         },
         {
           number: 2,
@@ -98,6 +98,6 @@ export const executiveReadout = {
   
     executiveFocus: {
       title: "Executive focus",
-      text: "Protect the four business commitments, validate the highest impact technical risks and turn findings into owned actions.",
+      text: "Protect the four business commitments, validate the highest impact technical risks and turn findings into actions with clear owners.",
     },
   };
