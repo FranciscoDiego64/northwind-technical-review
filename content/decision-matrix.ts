@@ -41,7 +41,7 @@ export const decisionMatrix = {
         priority: "High visibility",
         tamAction:
           "Confirm what the customer needs, check the roadmap with Product and communicate only what is confirmed.",
-        routing: "Product; AE for commercial questions",
+        routing: "Product / AE for commercial questions",
         why: "Board visibility makes the request important, but roadmap commitments belong with Product.",
       },
   
@@ -50,7 +50,7 @@ export const decisionMatrix = {
         request: "Training for newly hired frontend team",
         priority: "Planned",
         tamAction:
-          "Understand the team's capability gap and desired outcome, then arrange the appropriate training.",
+          "Understand the team's needs and skill gaps, then arrange the right training.",
         routing: "DSE",
         why: "Important for adoption and team capability, but it is not an immediate operational risk.",
       },

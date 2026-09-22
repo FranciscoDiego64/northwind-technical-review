@@ -213,7 +213,7 @@ export const accountPlan = {
   
       weeks: [
         {
-          title: "Week 1 — Align & Baseline",
+          title: "Week 1 - Align & Baseline",
   
           items: [
             "Confirm business targets, deadlines and owners.",
@@ -225,7 +225,7 @@ export const accountPlan = {
         },
   
         {
-          title: "Week 2 — Validate",
+          title: "Week 2 - Validate",
   
           items: [
             "Investigate the major cost and resource signals.",
@@ -237,7 +237,7 @@ export const accountPlan = {
         },
   
         {
-          title: "Weeks 3–4 — Action",
+          title: "Weeks 3-4 - Action",
   
           items: [
             "Implement the agreed fixes for confirmed cost and performance issues.",
