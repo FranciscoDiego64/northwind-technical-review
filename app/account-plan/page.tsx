@@ -442,35 +442,43 @@ export default function AccountPlanPage() {
 
           {/* 30-day outcome */}
           <section
-            id="30-day-outcome"
-            className="scroll-mt-8 border-t border-black/10 pt-12 pb-8"
-          >
-            <div className="max-w-4xl rounded-2xl bg-black p-7 text-white sm:p-9">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/45">
-                {accountPlan.thirtyDayOutcome.title}
-              </p>
+  id="30-day-outcome"
+  className="scroll-mt-8 border-t border-black/10 pt-12"
+>
+  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-black/40">
+    {accountPlan.thirtyDayOutcome.title}
+  </p>
 
-              <p className="mt-5 text-lg leading-8 text-white/80">
-                {accountPlan.thirtyDayOutcome.intro}
-              </p>
+  <p className="mt-5 text-lg font-medium leading-8">
+    {accountPlan.thirtyDayOutcome.intro}
+  </p>
 
-              <ul className="mt-6 space-y-4">
-                {accountPlan.thirtyDayOutcome.items.map((item) => (
-                  <li key={item} className="flex gap-4 text-base leading-7">
-                    <span aria-hidden="true" className="mt-1 font-semibold">
-                      ✓
-                    </span>
+  <div className="mt-6 max-w-3xl divide-y divide-black/10 border-y border-black/10">
+    {accountPlan.thirtyDayOutcome.items.map((item) => (
+      <div
+        key={item}
+        className="flex gap-4 py-5"
+      >
+        <span
+          aria-hidden="true"
+          className="mt-1 text-sm font-semibold"
+        >
+          ✓
+        </span>
 
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+        <p className="leading-7 text-black/70">
+          {item}
+        </p>
+      </div>
+    ))}
+  </div>
 
-              <p className="mt-8 border-t border-white/15 pt-6 text-sm leading-7 text-white/65">
-                {accountPlan.thirtyDayOutcome.closing}
-              </p>
-            </div>
-          </section>
+  <div className="mt-10 max-w-4xl rounded-xl bg-black p-7 text-white sm:p-9">
+    <p className="text-lg leading-8 tracking-tight sm:text-l sm:leading-9">
+      {accountPlan.thirtyDayOutcome.closing}
+    </p>
+  </div>
+</section>
         </div>
       </div>
     </div>

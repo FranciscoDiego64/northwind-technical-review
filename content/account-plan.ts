@@ -9,13 +9,13 @@ export const accountPlan = {
   
       objectives: [
         "Keep infrastructure spend flat through the holiday season while traffic grows.",
-        "Pass the Q1 customer-data security review to enable the new enterprise wholesale channel.",
-        "Improve product discovery and reduce search-related cart abandonment.",
-        "Launch a mobile client against the existing product catalog by mid-year.",
+        "Pass the Q1 customer data security review to enable the new enterprise wholesale channel.",
+        "Improve product discovery and reduce search related cart abandonment.",
+        "Launch a mobile client using the existing catalog by mid-year.",
       ],
   
       closing:
-        "The first 30 days will focus on validating the highest impact technical risks, establishing ownership and turning confirmed findings into measurable actions.",
+        "The first 30 days will focus on validating the highest impact technical risks, making sure each issue has a clear owner and next step.",
     },
   
     priorities: {
@@ -25,31 +25,31 @@ export const accountPlan = {
         {
           priority: 1,
           businessGoal: "Infrastructure spend",
-          work: "Investigate the main drivers of the recent cost increase, focusing on Fast Data Transfer, Functions, high-growth routes and /api/recommendations.",
+          work: "Investigate the main drivers of the recent cost increase, focusing on Fast Data Transfer, Functions, high growth routes and /api/recommendations.",
           dependencies:
             "Engineering, traffic forecast, agreed spend target",
           impactIfUnmet:
-            "Higher infrastructure costs as traffic grows and increased peak-season risk",
+            "Higher infrastructure costs as traffic grows and increased peak season risk",
           expectedReturn:
-            "Clear understanding of consumption drivers and an actionable path to control avoidable spend",
+            "Clear understanding of what is driving consumption and a plan to reduce avoidable spend.",
         },
         {
           priority: 2,
           businessGoal: "Product discovery",
           work: "Establish the search-to-cart funnel and identify the main contributors to search abandonment.",
           dependencies: "Product/search owner, analytics, engineering",
-          impactIfUnmet: "Continued lost-cart opportunities",
+          impactIfUnmet: "Continued lost cart opportunities",
           expectedReturn:
             "Reduced search abandonment and improved search-to-cart conversion",
         },
         {
           priority: 3,
           businessGoal: "Security review",
-          work: "Map Q1 review requirements to the current architecture, controls and evidence.",
+          work: "Map Q1 review requirements to the current architecture.",
           dependencies:
             "Security, engineering, review criteria and deadline",
-          impactIfUnmet: "Risk of delaying the wholesale channel launch",
-          expectedReturn: "Clear remediation plan and review readiness",
+          impactIfUnmet: "Risk of delaying launch of the wholesale channel",
+          expectedReturn: "Clear plan to close the identified gaps and be ready for the review.",
         },
         {
           priority: 4,
@@ -75,7 +75,7 @@ export const accountPlan = {
   
         currentState: `June infrastructure spend was $4,970, up 38% month over month, with Fast Data Transfer and Functions representing the largest billing increases. Several high-volume routes also experienced substantial growth.
   
-  The clearest resource pressure signal is /api/recommendations, with 950K invocations, up 138%, peak memory at approximately 96% of provisioned memory, and 12% CPU throttling. It currently has no timeouts and a p95 latency of 260ms.`,
+  The clearest resource pressure signal is /api/recommendations, with 950K invocations, up 138%, peak memory at approximately 96% of provisioned memory and 12% CPU throttling. It currently has no timeouts and a p95 latency of 260ms.`,
   
         actions: [
           "Establish the relationship between traffic growth, function execution, data transfer and cost.",
@@ -86,13 +86,13 @@ export const accountPlan = {
         ],
   
         dependencies:
-          "Engineering owners, traffic forecast, expected workload growth and an agreed definition of the required spend target.",
+          "Engineering owners, expected traffic and workload growth and an agreed holiday spend target.",
   
         successMeasures: [
           "Major consumption drivers are understood and documented.",
-          "Confirmed inefficiencies have an owner and remediation plan.",
+          "Confirmed issues have a clear owner and action plan.",
           "The holiday spend target is agreed.",
-          "Critical workloads have been assessed against expected traffic growth.",
+          "The critical workloads have been assessed against expected traffic growth.",
         ],
       },
   
@@ -103,7 +103,7 @@ export const accountPlan = {
         currentStateTitle: "Current signal",
       
         currentState:
-          "Search abandonment is currently Northwind's largest identified contributor to lost carts. Search related Fast Data Transfer also increased 63% month over month, providing a technical signal to investigate alongside the business funnel.",
+          "Search abandonment is currently Northwind's largest identified contributor to lost carts. Search related Fast Data Transfer also increased 63% month over month, providing a signal to investigate alongside the business funnel.",
       
         actionsTitle: "Actions",
       
@@ -113,14 +113,14 @@ export const accountPlan = {
       
         baseline: [
           "search abandonment",
-          "zero-result searches",
+          "zero result searches",
           "search latency and errors",
           "result interaction",
           "search-to-cart conversion",
         ],
       
         actionsClosing:
-          "Use these findings to determine if the primary issue is relevance, technical performance, rendering or another part of the customer journey before selecting a corrective action.",
+          "Use these findings to determine if the primary issue is relevance, technical performance, rendering or another part of the customer journey before establishing a corrective action.",
       
         dependencies:
           "Product/search ownership, analytics data and engineering support.",
@@ -129,7 +129,7 @@ export const accountPlan = {
           "Continued search abandonment represents a direct risk to product discovery and conversion.",
       
         successMeasures: [
-          "Search funnel baseline established.",
+          "Current search funnel performance understood and documented.",
           "Main contributors to abandonment identified.",
           "Improvement actions agreed with clear ownership.",
           "Progress measured through abandonment and search-to-cart conversion.",
@@ -143,7 +143,7 @@ export const accountPlan = {
         currentStateTitle: "Current state",
   
         currentState:
-          "The available usage data does not establish readiness for the Q1 security review. Readiness therefore needs to be assessed directly against the review requirements, architecture and existing controls.",
+          "The available usage data does not establish readiness for the Q1 security review. Therefore, readiness needs to be assessed directly against the review requirements, architecture and existing controls.",
         
         actionsTitle: "Actions",
 
@@ -159,10 +159,10 @@ export const accountPlan = {
           "Northwind security and engineering teams, confirmed review criteria and review date.",
   
         impactIfUnmet:
-          "Failure to close a material security requirement could delay the wholesale channel launch and its associated business opportunity.",
+          "Failure to close a key security requirement could delay the wholesale channel launch and its related business opportunity.",
   
         successMeasures: [
-          "All material requirements have an owner and deadline.",
+          "All key requirements have an owner and deadline.",
           "Critical gaps are actively being remediated.",
           "Required evidence is identified and prepared ahead of the review.",
         ],
@@ -175,7 +175,7 @@ export const accountPlan = {
         currentStateTitle: "Current state",
   
         currentState:
-          "No mobile work has started. The immediate priority is therefore architectural readiness rather than implementation.",
+          "No mobile work has started. Therefore, the immediate priority is architectural readiness rather than implementation.",
 
        
 
@@ -197,7 +197,7 @@ export const accountPlan = {
         dependencies: "Mobile, product and engineering teams.",
   
         impactIfUnmet:
-          "Late architectural discovery could increase implementation effort and put the mid-year launch at risk.",
+          "Finding architecture issues late could increase the work required and put the mid-year launch at risk.",
   
         successMeasures: [
           "Mobile architecture agreed.",
@@ -218,7 +218,7 @@ export const accountPlan = {
           items: [
             "Confirm business targets, deadlines and owners.",
             "Establish the holiday traffic forecast and spend target.",
-            "Baseline the search funnel.",
+            "Establish the current state of the search funnel.",
             "Confirm security review requirements and date.",
             "Map mobile stakeholders and existing catalog dependencies.",
           ],
@@ -240,11 +240,11 @@ export const accountPlan = {
           title: "Weeks 3–4 — Action",
   
           items: [
-            "Drive remediation for confirmed cost and performance issues.",
+            "Implement the agreed fixes for confirmed cost and performance issues.",
             "Agree and begin the first search improvements.",
             "Launch the security remediation plan.",
             "Finalize mobile architecture decisions.",
-            "Engage Vercel specialists where deeper technical execution or assessment is required.",
+            "Bring in the right Vercel specialists when additional technical expertise is needed.",
           ],
         },
       ],
@@ -277,7 +277,7 @@ export const accountPlan = {
   
         {
           title: "Escalation",
-          text: "Material issues will be flagged early with clear customer impact, ownership, next action and communication plan.",
+          text: "Raise important issues early, with a clear impact, owner, next step and communication plan.",
         },
       ],
     },
@@ -288,11 +288,11 @@ export const accountPlan = {
       intro: "At the end of the first month, Northwind should have:",
   
       items: [
-        "A validated cost-control plan for the holiday period.",
-        "Clear ownership of the highest impact technical risks.",
-        "A measurable search baseline and agreed improvement actions.",
-        "A security readiness plan tied to the Q1 review requirements.",
-        "An agreed architectural path for mobile with dependencies and owners.",
+        "A clear plan to keep infrastructure spend under control during the holiday period.",
+        "Named owners for the main technical risks.",
+        "A clear view of current search performance and agreed actions to improve it.",
+        "Key security gaps identified, with actions and owners ahead of the Q1 review.",
+        "A defined mobile architecture, including key dependencies and owners.",
       ],
   
       closing:
